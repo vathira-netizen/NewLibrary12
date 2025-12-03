@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Complaints • CHRIST University Library</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- header injected by scripts.js -->
+  <main class="container">
+    <div class="card" style="max-width:800px;margin:28px auto">
+      <h2>Register a complaint</h2>
+      <p class="small-muted">Select a type and provide details. Choose "Other" to add a custom type.</p>
+
+      <div class="form-row">
+        <label>Complaint type</label>
+        <select id="complaintType"></select>
+      </div>
+      <div class="form-row" id="otherComplaintRow" style="display:none">
+        <label>Other (please specify)</label>
+        <input id="otherComplaint" />
+      </div>
+      <div class="form-row">
+        <label>Details</label>
+        <textarea id="complaintDetails" rows="5" placeholder="Describe your issue..."></textarea>
+      </div>
+      <div style="display:flex;gap:12px">
+        <button id="submitComplaint" class="btn">Submit complaint</button>
+        <a href="dashboard.html" class="small-muted" style="align-self:center">Back</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

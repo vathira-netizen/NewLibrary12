@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard • CHRIST University Library</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- header injected by scripts.js -->
+  <main style="padding-top:18px">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div class="small-muted">LIBRARY ACCESS</div>
+                <h1 style="margin:6px 0 0;color:var(--navy)">Explore a world of knowledge</h1>
+              </div>
+              <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=320&auto=format&fit=crop" alt="" style="width:220px;height:140px;object-fit:cover;border-radius:6px"/>
+            </div>
+            <p class="small-muted" style="margin-top:12px">Search, reserve and manage library resources.</p>
+          </div>
+
+          <div style="margin-top:18px" class="card">
+            <div class="stats">
+              <div class="stat"><h2 id="statIssued">0</h2><p>Past issued</p></div>
+              <div class="stat"><h2 id="statActive">0</h2><p>Active issues</p></div>
+              <div class="stat"><h2 id="statReturns">0</h2><p>Pending returns</p></div>
+              <div class="stat"><h2 id="statFine">₹ 0</h2><p>Pending fine</p></div>
+            </div>
+          </div>
+
+          <div style="margin-top:18px" class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <h3 style="margin:0">Find a book</h3>
+              <div class="small-muted">Filter or search</div>
+            </div>
+            <div style="margin-top:12px" class="toolbar">
+              <div class="search">
+                <input id="searchInput" placeholder="Search by title or author..." />
+                <button id="searchBtn">Search</button>
+              </div>
+              <div class="filter">
+                <select id="filterCategory"></select>
+              </div>
+              <div class="filter">
+                <select id="filterAuthor"></select>
+              </div>
+              <div class="filter">
+                <select id="filterLanguage"></select>
+              </div>
+            </div>
+
+            <div id="booksGrid" style="margin-top:16px" class="small-grid"></div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin:0">Your favorites</h3>
+            <div id="favList" style="margin-top:12px"></div>
+          </div>
+
+          <div class="card" style="margin-top:18px">
+            <h3 style="margin:0">Quick actions</h3>
+            <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+              <a class="btn" href="profile.html" style="background:#fff;border:1px solid #ddd;color:var(--navy);text-align:center">Edit profile</a>
+              <a class="btn" href="complaint.html" style="background:var(--accent);color:var(--text);text-align:center">Register complaint</a>
+              <a class="btn" href="room_booking.html" style="background:var(--navy);color:#fff;text-align:center">Book conference room</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

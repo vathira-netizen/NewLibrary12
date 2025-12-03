@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Profile • CHRIST University Library</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- header injected by scripts.js -->
+  <main class="container">
+    <div class="card" style="max-width:800px;margin:28px auto">
+      <h2>Edit Account</h2>
+      <p class="small-muted">Update phone, email and password (email must be @christuniversity.in).</p>
+
+      <div style="margin-top:12px">
+        <div class="form-row">
+          <label for="profileName">Full name</label>
+          <input id="profileName" />
+        </div>
+        <div class="form-row">
+          <label for="profileEmail">Email</label>
+          <input id="profileEmail" type="email" />
+        </div>
+        <div class="form-row">
+          <label for="profilePhone">Phone</label>
+          <input id="profilePhone" type="text"/>
+        </div>
+        <div class="form-row">
+          <label for="profilePassword">Password</label>
+          <input id="profilePassword" type="password"/>
+        </div>
+        <div style="display:flex;gap:12px">
+          <button id="saveProfileBtn" class="btn">Save changes</button>
+          <a href="dashboard.html" class="small-muted" style="align-self:center">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

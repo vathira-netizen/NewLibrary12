@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Conference Room Booking • CHRIST University Library</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- header injected by scripts.js -->
+  <main class="container">
+    <div class="card" style="max-width:760px;margin:28px auto">
+      <h2>Book a conference room</h2>
+      <p class="small-muted">Specify date, timeslot and number of people.</p>
+
+      <div class="form-row">
+        <label>Date</label>
+        <input id="roomDate" type="date" />
+      </div>
+      <div style="display:flex;gap:12px">
+        <div class="form-row small" style="flex:1">
+          <label>From</label><input id="roomFrom" type="time" />
+        </div>
+        <div class="form-row small" style="flex:1">
+          <label>To</label><input id="roomTo" type="time" />
+        </div>
+      </div>
+      <div class="form-row small">
+        <label>Number of people</label><input id="roomPeople" type="number" min="1" placeholder="e.g., 8"/>
+      </div>
+
+      <div style="display:flex;gap:12px">
+        <button id="bookRoomBtn" class="btn">Book room</button>
+        <a href="dashboard.html" class="small-muted" style="align-self:center">Back</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

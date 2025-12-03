@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Books</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="search.html">Search Books</a>
+    <a href="profile.html">Edit Profile</a>
+    <a href="complaint.html">Complaints</a>
+    <a href="conference.html">Conference Booking</a>
+    <a href="index.html">Logout</a>
+  </div>
+
+  <h2>Search & Filter Books</h2>
+  <input type="text" id="searchQuery" placeholder="Search by title..." />
+
+  <div class="filter-box">
+    <select id="categoryFilter"><option value="all">All Categories</option></select>
+    <select id="authorFilter"><option value="all">All Authors</option></select>
+    <select id="languageFilter"><option value="all">All Languages</option></select>
+  </div>
+
+  <div id="bookResults" class="book-list"></div>
+
+  <script src="search.js"></script>
+</body>
+</html>
